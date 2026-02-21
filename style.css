@@ -314,7 +314,7 @@ nav {
 /* ─── Markets Grid ──────────────────────────────────────────────────── */
 .markets-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
 }
 .market-card {
@@ -337,10 +337,11 @@ nav {
   line-height: 1;
 }
 .market-card h3 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 16px;
   line-height: 1.35;
+  color: var(--accent);
 }
 .market-card ul { list-style: none; }
 .market-card ul li {
