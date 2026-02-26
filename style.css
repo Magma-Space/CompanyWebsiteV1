@@ -434,15 +434,16 @@ nav {
   flex-wrap: wrap;
 }
 .partner-logo {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: color 0.2s;
-  opacity: 0.7;
+  display: flex;
+  align-items: center;
 }
-.partner-logo:hover { color: var(--text); opacity: 1; }
+.partner-logo img {
+  height: 56px;
+  width: auto;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+.partner-logo img:hover { opacity: 1; }
 
 /* ─── Page Hero (inner pages) ───────────────────────────────────────── */
 .page-hero {
