@@ -8,7 +8,8 @@
       "WebFetch(domain:www.spaceforce.mil)",
       "WebFetch(domain:en.wikipedia.org)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:jobs.gusto.com)"
     ]
   }
 }

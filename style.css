@@ -73,6 +73,28 @@ nav {
 }
 .nav-links a:hover,
 .nav-links a.active { color: var(--text); }
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 101;
+}
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 .btn-contact {
   padding: 9px 22px;
   background: var(--accent);
@@ -161,7 +183,7 @@ nav {
 .hero p {
   font-size: 18px;
   color: var(--text-dim);
-  max-width: 540px;
+  max-width: 720px;
   margin-bottom: 44px;
   line-height: 1.75;
 }
@@ -783,6 +805,7 @@ footer {
 .footer-col ul { list-style: none; }
 .footer-col ul li { margin-bottom: 12px; }
 .footer-col ul li a {
+  white-space: nowrap;
   font-size: 14px;
   color: var(--text-dim);
   transition: color 0.2s;
@@ -839,7 +862,29 @@ footer {
 @media (max-width: 768px) {
   .container   { padding: 0 24px; }
   nav          { padding: 0 24px; }
-  .nav-links   { display: none; }
+  .nav-toggle  { display: flex; }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 24px 20px;
+    background: rgba(7,7,14,0.98);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    z-index: 99;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li a {
+    display: block;
+    padding: 14px 0;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .nav-links li:last-child a { border-bottom: none; }
   .stats-grid  { grid-template-columns: repeat(2, 1fr); }
   .stat-item   { border-right: none; border-bottom: 1px solid var(--border); }
   .stat-item:nth-child(odd)  { border-right: 1px solid var(--border); }
