@@ -214,7 +214,7 @@ nav {
   margin-bottom: 8px;
 }
 .stat-label {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-muted);
   font-weight: 600;
   text-transform: uppercase;
@@ -234,7 +234,7 @@ nav {
 .section-header p {
   font-size: 19px;
   color: var(--text-dim);
-  max-width: 560px;
+  max-width: 720px;
   line-height: 1.75;
 }
 .section-header.centered { text-align: center; }
@@ -393,7 +393,7 @@ nav {
 }
 .market-card ul { list-style: none; }
 .market-card ul li {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--text-muted);
   padding: 7px 0;
   display: flex;
@@ -468,7 +468,7 @@ nav {
 }
 .partners-label {
   text-align: center;
-  font-size: 11px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--text-muted);
@@ -553,7 +553,7 @@ nav {
   margin-bottom: 4px;
 }
 .team-info-text p {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-muted);
   font-weight: 500;
 }
@@ -592,14 +592,14 @@ nav {
   margin-bottom: 6px;
 }
 .advisor-card .role {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--accent);
   font-weight: 600;
   letter-spacing: 0.02em;
   margin-bottom: 12px;
 }
 .advisor-card p {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-muted);
   line-height: 1.65;
 }
@@ -625,7 +625,7 @@ nav {
 .job-card:hover { background: var(--bg-card-hover); }
 .job-info { flex: 1; }
 .job-dept {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -716,7 +716,7 @@ nav {
   flex-shrink: 0;
 }
 .contact-item-text .label {
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-muted);
@@ -821,7 +821,7 @@ footer {
   max-width: 280px;
 }
 .footer-col h4 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
