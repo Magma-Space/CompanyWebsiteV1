@@ -344,11 +344,37 @@ nav {
   border: 1px solid var(--border);
   border-radius: var(--r);
   padding: 32px 28px;
-  transition: border-color 0.2s, background 0.2s;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.market-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 .market-card:hover {
-  border-color: rgba(218,48,94,0.3);
+  border-color: rgba(218,48,94,0.45);
   background: var(--bg-card-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(218,48,94,0.12);
+}
+.market-card:hover::before { opacity: 1; }
+.market-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--accent);
+  margin-bottom: 20px;
+  opacity: 0.8;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.market-card:hover .market-icon {
+  transform: scale(1.15);
+  opacity: 1;
 }
 .market-value {
   font-size: 38px;
