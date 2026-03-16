@@ -9,7 +9,11 @@
       "WebFetch(domain:en.wikipedia.org)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "WebFetch(domain:jobs.gusto.com)"
+      "WebFetch(domain:jobs.gusto.com)",
+      "Bash(git -C \"c:/Users/JordanHandle_22y14y/Documents/MagmaWebsiteV1\" status)",
+      "Bash(git -C \"c:/Users/JordanHandle_22y14y/Documents/MagmaWebsiteV1\" log --oneline -5)",
+      "Bash(git -C \"c:/Users/JordanHandle_22y14y/Documents/MagmaWebsiteV1\" add index.html team.html careers.html contact.html)",
+      "Bash(git -C:*)"
     ]
   }
 }
