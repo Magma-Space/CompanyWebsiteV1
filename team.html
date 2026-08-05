@@ -8,7 +8,9 @@
   <meta name="keywords" content="Magma Space team, GNC engineers, precision spacecraft engineers, spacecraft control systems, spacecraft attitude control, magnetically levitated reaction wheel">
   <link rel="canonical" href="https://www.magma-space.com/team">
   <link rel="icon" type="image/png" href="Images/logos/magma_favicon.png">
-
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#DA305E">
+  <meta name="author" content="Magma Space Inc.">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -17,6 +19,9 @@
   <meta property="og:title" content="Team — Magma Space">
   <meta property="og:description" content="Meet the team behind Magma Space's magnetically levitated satellite platform — PhDs, engineers, and operators united by a mission to transform spacecraft precision.">
   <meta property="og:image" content="https://www.magma-space.com/Images/stock/lasercomm.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
 
   <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -28,6 +33,89 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data: AboutPage + Team roster -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Team — Magma Space",
+    "url": "https://www.magma-space.com/team",
+    "description": "Meet the team behind Magma Space's precision satellite control systems — PhDs, GNC engineers, and operators building ultra-stable spacecraft for directed energy and quantum sensing missions.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Magma Space",
+      "url": "https://www.magma-space.com"
+    },
+    "about": {
+      "@type": "Organization",
+      "name": "Magma Space",
+      "url": "https://www.magma-space.com",
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Alessandro Stabile",
+          "honorificSuffix": "PhD",
+          "jobTitle": "Founder & CEO",
+          "image": "https://www.magma-space.com/Images/team/AlessandroStabile.jpg",
+          "sameAs": "https://www.linkedin.com/in/alessandrostabile/",
+          "worksFor": { "@type": "Organization", "name": "Magma Space" }
+        },
+        {
+          "@type": "Person",
+          "name": "Jordan Handler",
+          "jobTitle": "Co-Founder & COO",
+          "image": "https://www.magma-space.com/Images/team/JordanHandler.jpg",
+          "sameAs": "https://www.linkedin.com/in/jordan-handler-27948578/",
+          "worksFor": { "@type": "Organization", "name": "Magma Space" }
+        },
+        {
+          "@type": "Person",
+          "name": "Cooter McGrew",
+          "jobTitle": "Principal Embedded Systems Engineer",
+          "image": "https://www.magma-space.com/Images/team/CooterMcgrew.jpg",
+          "sameAs": "https://www.linkedin.com/in/cooter-mcgrew-31782857/",
+          "worksFor": { "@type": "Organization", "name": "Magma Space" }
+        },
+        {
+          "@type": "Person",
+          "name": "Paul Mourges",
+          "jobTitle": "Sr. Electrical Engineer",
+          "image": "https://www.magma-space.com/Images/team/PaulMourges.jpg",
+          "sameAs": "https://www.linkedin.com/in/paul-m-9b13b413a/",
+          "worksFor": { "@type": "Organization", "name": "Magma Space" }
+        },
+        {
+          "@type": "Person",
+          "name": "Nathan Pen",
+          "jobTitle": "Sr. FPGA Engineer",
+          "image": "https://www.magma-space.com/Images/team/NathanPen.jpg",
+          "sameAs": "https://www.linkedin.com/in/nathan-pen/",
+          "worksFor": { "@type": "Organization", "name": "Magma Space" }
+        },
+        {
+          "@type": "Person",
+          "name": "Chris Tomko",
+          "jobTitle": "Sr. Structural Engineer",
+          "image": "https://www.magma-space.com/Images/team/ChrisTomko.JPG",
+          "sameAs": "https://www.linkedin.com/in/christopher-tomko-475a4532b/",
+          "worksFor": { "@type": "Organization", "name": "Magma Space" }
+        }
+      ]
+    }
+  }
+  </script>
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.magma-space.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Team", "item": "https://www.magma-space.com/team" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -65,7 +153,7 @@
     <div class="team-grid">
 
       <div class="team-card">
-        <img src="Images/team/AlessandroStabile.jpg" alt="Alessandro Stabile, PhD" class="team-photo">
+        <img src="Images/team/AlessandroStabile.jpg" alt="Alessandro Stabile, PhD" class="team-photo" loading="lazy" decoding="async" width="400" height="400">
         <div class="team-info">
           <div class="team-info-text">
             <h3>Alessandro Stabile, PhD</h3>
@@ -81,7 +169,7 @@
       </div>
 
       <div class="team-card">
-        <img src="Images/team/JordanHandler.jpg" alt="Jordan Handler" class="team-photo">
+        <img src="Images/team/JordanHandler.jpg" alt="Jordan Handler" class="team-photo" loading="lazy" decoding="async" width="400" height="400">
         <div class="team-info">
           <div class="team-info-text">
             <h3>Jordan Handler</h3>
@@ -97,7 +185,7 @@
       </div>
 
       <div class="team-card">
-        <img src="Images/team/CooterMcgrew.jpg" alt="Cooter McGrew" class="team-photo">
+        <img src="Images/team/CooterMcgrew.jpg" alt="Cooter McGrew" class="team-photo" loading="lazy" decoding="async" width="400" height="400">
         <div class="team-info">
           <div class="team-info-text">
             <h3>Cooter McGrew</h3>
@@ -113,7 +201,7 @@
       </div>
 
       <div class="team-card">
-        <img src="Images/team/PaulMourges.jpg" alt="Paul Mourges" class="team-photo">
+        <img src="Images/team/PaulMourges.jpg" alt="Paul Mourges" class="team-photo" loading="lazy" decoding="async" width="400" height="400">
         <div class="team-info">
           <div class="team-info-text">
             <h3>Paul Mourges</h3>
@@ -129,7 +217,7 @@
       </div>
 
       <div class="team-card">
-        <img src="Images/team/NathanPen.jpg" alt="Nathan Pen" class="team-photo">
+        <img src="Images/team/NathanPen.jpg" alt="Nathan Pen" class="team-photo" loading="lazy" decoding="async" width="400" height="400">
         <div class="team-info">
           <div class="team-info-text">
             <h3>Nathan Pen</h3>
@@ -145,7 +233,7 @@
       </div>
 
       <div class="team-card">
-        <img src="Images/team/ChrisTomko.JPG" alt="Chris Tomko" class="team-photo">
+        <img src="Images/team/ChrisTomko.JPG" alt="Chris Tomko" class="team-photo" loading="lazy" decoding="async" width="400" height="400">
         <div class="team-info">
           <div class="team-info-text">
             <h3>Chris Tomko</h3>
@@ -161,7 +249,7 @@
       </div>
 
       <div class="team-card">
-        <img src="Images/team/EthanSternstein.JPG" alt="Ethan Sternstein" class="team-photo">
+        <img src="Images/team/EthanSternstein.JPG" alt="Ethan Sternstein" class="team-photo" loading="lazy" decoding="async" width="400" height="400">
         <div class="team-info">
           <div class="team-info-text">
             <h3>Ethan Sternstein</h3>
@@ -177,7 +265,7 @@
       </div>
 
       <div class="team-card">
-        <img src="Images/team/JacobMukobi.jpg" alt="Jacob Mukobi" class="team-photo">
+        <img src="Images/team/JacobMukobi.jpg" alt="Jacob Mukobi" class="team-photo" loading="lazy" decoding="async" width="400" height="400">
         <div class="team-info">
           <div class="team-info-text">
             <h3>Jacob Mukobi</h3>
